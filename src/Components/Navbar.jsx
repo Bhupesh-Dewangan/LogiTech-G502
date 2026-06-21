@@ -5,7 +5,7 @@ import BrandLogo from "../assets/BrandName.png"
 
 function Navbar() {
     return (
-        <div className="flex px-20 py-6 items-center justify-between text-white border-b border-[#716d6d]">
+        <div className="flex px-20 py-6 items-center justify-between text-white border-b border-[#716d6d] ">
             <img src={BrandLogo} alt="LOGO" className="w-40 " />
             <nav className="">
                 <ul className='flex gap-22 justify-center'>

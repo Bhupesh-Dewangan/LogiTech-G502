@@ -1,10 +1,11 @@
-import React from 'react'
 import Hero from './Pages/Hero'
+import Features from './Pages/Features'
 
 const App = () => {
   return (
-    <div className='flex h-screen w-screen'>
+    <div className='flex min-h-screen w-full flex-col'>
       <Hero />
+      <Features />
     </div>
   )
 }
