@@ -1,9 +1,13 @@
+import { useState } from 'react'
 import Mouse from '../assets/MouseBig.webp'
 import BottomMouseImg from '../assets/bottom.webp'
 import DPI from '../assets/DPI.webp'
 import Prog from '../assets/11-Prog.webp'
+import AdditionalFeatures from './AdditionalFeatures'
 
 function Features() {
+    const [showAdditional, setShowAdditional] = useState(false)
+
     return (
         <div className=' w-full bg-black text-white flex flex-col items-center justify-start pb-20'>
             <h2 className="text-4xl pt-20 font-bold text-center mb-6">A ROBORN HERO</h2>
@@ -27,9 +31,14 @@ function Features() {
                     <p className='text-md'>Cycle up and down through as many as five DPI settings with a single click. Three DPI indicator lights tell you which setting you are on. Customize these DPI settings with Logitech G HUB or use the default settings out-of-the-box.</p>
                 </div>
             </div>
-            <button className='bg-cyan-400 py-3 px-8 rounded-full text-black font-semibold'>
-                Discover More Features +
+            <button 
+                onClick={() => setShowAdditional(true)}
+                className='bg-cyan-400 hover:bg-cyan-500 py-3 px-8 rounded-full text-black font-semibold cursor-pointer'
+            >
+                View more Features
             </button>
+
+            {showAdditional && <AdditionalFeatures onClose={() => setShowAdditional(false)} />}
 
         </div >
     )
