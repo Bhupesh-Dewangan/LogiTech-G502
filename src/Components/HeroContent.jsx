@@ -3,12 +3,19 @@ import HeroText from "./HeroText";
 
 function HeroContent() {
     return (
-        <div className='px-20 py-5 grid grid-cols-2 gap-2 w-full h-full relative '>
-            <div className=" font-semibold">
+        <div className='py-10 flex justify-start w-full h-full relative gap-10'>
+            <div className="w-10 flex justify-center items-center">
+                {/* Space reservation for fixed LeftAsideBar */}
+            </div>
+            <div className=" font-semibold w-[45%]">
                 <HeroText />
             </div>
             <div className="">
                 <HeroImage />
+            </div>
+
+            <div className="w-10 flex justify-center items-center">
+                {/* Space reservation for fixed RightAsideBar */}
             </div>
         </div>
     )
