@@ -6,7 +6,7 @@ function Specification() {
             <h2 className="text-4xl pt-20 font-bold text-center mb-16">SPECIFICATIONS</h2>
 
             <div className='grid grid-cols-3 grid-rows-1 gap-10 mx-20'>
-                <div className='flex flex-col justify-items-start items-center border border-zinc-500 py-6 px-12'>
+                <div className='flex flex-col justify-items-start items-center border border-zinc-500 py-6 px-12 rounded-xl'>
                     <h3 className='font-semibold text-2xl mb-6'>Physical Specification</h3>
                     <ul className='flex flex-col gap-3 list-disc mb-6 pl-4'>
                         <li className='text-md'>Height: 131.2 mm</li>
@@ -22,7 +22,7 @@ function Specification() {
                     <p className='font-semibold w-full text-left text-lg'>Battery Required : No </p>
                 </div>
 
-                <div className='flex flex-col items-center border border-zinc-500 py-6 px-12'>
+                <div className='flex flex-col items-center border border-zinc-500 py-6 px-12 rounded-xl'>
                     <h3 className='font-semibold text-2xl mb-6'>Technical Specification</h3>
                     <div className='w-full'>
                         <h4 className='w-full text-left text-lg mb-2 font-semibold'>General Specifications</h4>
@@ -44,7 +44,7 @@ function Specification() {
                     </div>
                 </div>
 
-                <div className='flex flex-col justify-items-start items-center border border-zinc-500 py-6 px-12'>
+                <div className='flex flex-col justify-items-start items-center border border-zinc-500 py-6 px-12 rounded-xl'>
                     <h3 className='font-semibold text-2xl mb-6'>Other Specification</h3>
 
                     <div className='w-full'>
