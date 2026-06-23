@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar'
 import Product from './Pages/Product'
 import Specification from './Pages/Specification'
 import Contact from './Pages/Contact'
+import Footer from './Pages/Footer'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Features />
       <Specification />
       <Contact />
+      <Footer />
     </div>
   )
 }
