@@ -1,18 +1,32 @@
-import Mouse from '../assets/Mouse.png';
-import M1 from '../assets/1.png'
+import Mouse from '../assets/11.png'
+import M1 from '../assets/Mouse.png';
 import M2 from '../assets/2.png'
 import M3 from '../assets/3.png'
 import M4 from '../assets/4.png'
 
+
 function HeroImage() {
     return (
-        <div className='flex items-center justify-between px-10 mt-15 gap-20'>
-            <img src={Mouse} alt="Mouse" className='w-95 object-contain hover:scale-105 transition-transform duration-300 cursor-pointer' />
-            <div className='flex flex-col justify-between gap-5 h-full'>
-                <img src={M1} alt="M1" className='h-25 hover:scale-110 transition-transform duration-300 cursor-pointer' />
-                <img src={M2} alt="M2" className='h-25 hover:scale-110 transition-transform duration-300 cursor-pointer' />
-                <img src={M3} alt="M3" className='h-25 hover:scale-110 transition-transform duration-300 cursor-pointer' />
-                <img src={M4} alt="M4" className='h-25 hover:scale-110 transition-transform duration-300 cursor-pointer' />
+        <div className='flex items-end justify-between px-6 mt-10 relative'>
+            {/* Background Glow */}
+            <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-500 rounded-full mix-blend-screen filter blur-[100px] opacity-20 pointer-events-none'></div>
+
+            <img
+                src={Mouse}
+                alt="Logitech G502 Mouse"
+                className='w-160 object-contain z-10 drop-shadow-2xl'
+            />
+
+            <div className='flex flex-col justify-center gap-6 z-10'>
+                {[M1, M2, M3, M4].map((img, index) => (
+                    <div key={index} className='p-2 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-cyan-400/50 hover:bg-white/10 transition-all duration-300 cursor-pointer group'>
+                        <img
+                            src={img}
+                            alt={`Thumbnail ${index + 1}`}
+                            className='h-20 w-20 object-contain group-hover:scale-110 transition-transform duration-300'
+                        />
+                    </div>
+                ))}
             </div>
         </div>
     )

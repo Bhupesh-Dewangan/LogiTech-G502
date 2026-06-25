@@ -3,14 +3,16 @@ import HeroText from "./HeroText";
 
 function HeroContent() {
     return (
-        <div className='py-10 flex justify-start w-full h-full relative gap-10'>
+        <div className='py-16 flex justify-between items-center w-full min-h-[80vh] relative overflow-hidden'>
             <div className="w-10 flex justify-center items-center">
                 {/* Space reservation for fixed LeftAsideBar */}
             </div>
-            <div className=" font-semibold w-[45%]">
+
+            <div className="w-[40%] pl-10 animate-fade-in-up pt-20">
                 <HeroText />
             </div>
-            <div className="">
+
+            <div className="w-[50%] flex justify-end pr-10 animate-fade-in">
                 <HeroImage />
             </div>
 
