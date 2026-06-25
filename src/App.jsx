@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className='flex min-h-svh w-full flex-col relative'>
       <Navbar />
-      {/* <LeftAsideBar /> */}
+      <LeftAsideBar />
       {/* <RightAsideBar /> */}
 
       <Hero />

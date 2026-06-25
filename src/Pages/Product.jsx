@@ -19,7 +19,7 @@ function Product() {
     }
 
     return (
-        <div className='h-full w-full flex flex-col items-center px-20'>
+        <div id="product" className='h-full w-full flex flex-col items-center px-20'>
             <h2 className="text-4xl pt-20 font-bold text-center mb-6">
                 Product Preview
             </h2>

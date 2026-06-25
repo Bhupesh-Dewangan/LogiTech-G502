@@ -9,7 +9,7 @@ function Features() {
     const [showAdditional, setShowAdditional] = useState(false)
 
     return (
-        <div className=' w-full bg-black text-white flex flex-col items-center justify-start pb-20'>
+        <div id="features" className=' w-full bg-black text-white flex flex-col items-center justify-start pb-20'>
             <h2 className="text-4xl pt-20 font-bold text-center mb-6">A ROBORN HERO</h2>
             <p className="text-center text-lg w-200 mb-4">G502 HERO features an advanced optical sensor for maximum tracking accuracy, customizable RGB lighting, custom game profiles, from 200 up to 25,600 DPI, and repositionable weights.</p>
             <img className='w-full' src={Mouse} alt="Mouse" />

@@ -72,7 +72,7 @@ function Footer() {
     ];
 
     return (
-        <footer className="w-full bg-stone-950 text-stone-400 relative border-t border-stone-900/60 overflow-hidden pt-20 pb-8 z-10">
+        <footer id="footer" className="w-full bg-stone-950 text-stone-400 relative border-t border-stone-900/60 overflow-hidden pt-20 pb-8 z-10">
             {/* Ambient Background Glow matching the Logitech RGB Theme */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-cyan-500/10 blur-[130px] rounded-full pointer-events-none -z-10" />
 

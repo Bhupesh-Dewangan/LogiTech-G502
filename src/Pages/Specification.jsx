@@ -2,7 +2,7 @@ import React from 'react'
 
 function Specification() {
     return (
-        <div className="w-full h-full text-white bg-radial-[at_119%_70%] from-black via-stone-950 via 70% to-stone-950 to 82% overflow-hidden pb-20">
+        <div id="specification" className="w-full h-full text-white bg-radial-[at_119%_70%] from-black via-stone-950 via 70% to-stone-950 to 82% overflow-hidden pb-20">
             <h2 className="text-4xl pt-20 font-bold text-center mb-16">SPECIFICATIONS</h2>
 
             <div className='grid grid-cols-3 grid-rows-1 gap-10 mx-20'>
