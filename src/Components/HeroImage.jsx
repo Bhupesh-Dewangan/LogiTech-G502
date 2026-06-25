@@ -1,8 +1,8 @@
-import Mouse from '../assets/11.png'
-import M1 from '../assets/Mouse.png';
-import M2 from '../assets/2.png'
-import M3 from '../assets/3.png'
-import M4 from '../assets/4.png'
+import Mouse from '../assets/HeroImage.png'
+import M1 from '../assets/H1.png';
+import M2 from '../assets/H2.png'
+import M3 from '../assets/H3.png'
+import M4 from '../assets/H4.png'
 
 
 function HeroImage() {
