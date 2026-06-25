@@ -9,11 +9,11 @@ function Navbar() {
             </svg>
             <nav>
                 <ul className='flex gap-22 justify-center text-zinc-400'>
-                    <li className="hover:text-cyan-400 cursor-pointer">Home</li>
-                    <li className="hover:text-cyan-400 cursor-pointer">Product</li>
-                    <li className="hover:text-cyan-400 cursor-pointer">Features</li>
-                    <li className="hover:text-cyan-400 cursor-pointer">Specification</li>
-                    <li className="hover:text-cyan-400 cursor-pointer">Contact</li>
+                    <li className="hover:text-cyan-400 cursor-pointer"><a href="#hero"> Home </a> </li>
+                    <li className="hover:text-cyan-400 cursor-pointer"><a href="#product">Product</a></li>
+                    <li className="hover:text-cyan-400 cursor-pointer"><a href="#features">Features</a></li>
+                    <li className="hover:text-cyan-400 cursor-pointer"><a href="#specification">Specification</a></li>
+                    <li className="hover:text-cyan-400 cursor-pointer"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div className="flex gap-3 text-zinc-400">
@@ -29,7 +29,7 @@ function Navbar() {
                     <button>Sign In</button>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
