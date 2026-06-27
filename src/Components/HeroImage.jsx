@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Mouse from '../assets/HeroImage.png'
 import M1 from '../assets/H1.png';
 import M2 from '../assets/H2.png'
@@ -11,10 +12,19 @@ function HeroImage() {
             {/* Background Glow */}
             <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-500 rounded-full mix-blend-screen filter blur-[100px] opacity-20 pointer-events-none'></div>
 
-            <img
+            <motion.img
                 src={Mouse}
                 alt="Logitech G502 Mouse"
                 className='w-160 object-contain z-10 drop-shadow-2xl'
+                animate={{
+                    y: [0, -20, 0],
+                }}
+                transition={{
+                    duration: 4,
+                    ease: "easeInOut",
+                    repeat: Infinity,
+                    repeatType: "loop"
+                }}
             />
 
             <div className='flex flex-col justify-center gap-6 z-10'>
