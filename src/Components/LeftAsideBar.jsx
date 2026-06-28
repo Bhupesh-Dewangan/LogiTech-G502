@@ -51,7 +51,7 @@ function LeftAsideBar() {
     };
 
     return (
-        <div className={`w-12 h-full fixed left-0 top-0 z-50 transition-opacity duration-300 ${isFooter ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
+        <div className={`hidden lg:block w-12 h-full fixed left-0 top-0 z-50 transition-opacity duration-300 ${isFooter ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
             <div className="flex flex-col gap-6 justify-center items-center h-full w-full">
                 {sections.map((section) => (
                     <div 

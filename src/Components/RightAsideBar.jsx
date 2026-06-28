@@ -26,7 +26,7 @@ function RightAsideBar() {
     }, []);
 
     return (
-        <div className={`w-12 h-full fixed right-2 top-0 z-50 transition-opacity duration-300 ${isFooter ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
+        <div className={`hidden lg:block w-12 h-full fixed right-2 top-0 z-50 transition-opacity duration-300 ${isFooter ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
             <div className="flex flex-col gap-6 justify-center items-center h-full w-full text-zinc-500">
                 <FaXTwitter size={20} className="hover:text-cyan-400 hover:scale-125 transition-all duration-300 cursor-pointer" />
                 <FaDiscord size={20} className="hover:text-cyan-400 hover:scale-125 transition-all duration-300 cursor-pointer" />
