@@ -19,11 +19,11 @@ function Product() {
     }
 
     return (
-        <div id="product" className='h-full w-full flex flex-col items-center px-20'>
+        <div id="product" className='h-full w-full flex flex-col items-center px-6 lg:px-20'>
             <h2 className="text-4xl pt-20 font-bold text-center mb-6">
                 Product Preview
             </h2>
-            <div className='grid grid-cols-3 grid-rows-2 gap-6 my-10 mb-20'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10 mb-20 w-full max-w-7xl'>
                 {/* Card 1: P2 with interactive 3D and gallery options */}
                 <div 
                     className='h-full w-full bg-zinc-200 rounded-2xl cursor-pointer hover:bg-zinc-300 transition duration-300 ease-in-out'
