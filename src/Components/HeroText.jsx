@@ -1,12 +1,19 @@
 import FullStar from '../assets/FullStar.png'
 import UnStar from '../assets/UnStar.png'
 
-function HeroText() {
+export function HeroTitle() {
     return (
-        <div className='text-white flex flex-col gap-2 justify-center items-start h-full z-10 relative'>
-            <h1 className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-blue-500 text-5xl font-extrabold font-['Inter'] tracking-tight drop-shadow-lg">G502 LIGHTSPEED</h1>
-            <h2 className="text-gray-300 text-2xl font-semibold font-['Inter'] tracking-wide uppercase mt-1">Wireless Gaming Mouse</h2>
-            <p className="text-zinc-400 text-md font-normal font-['Inter'] leading-relaxed w-[90%] mt-6 border-l-4 border-blue-500 pl-4">
+        <div className="w-full flex flex-col items-center lg:items-start z-10 relative">
+            <h1 className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-blue-500 text-3xl sm:text-4xl md:text-5xl font-extrabold font-['Inter'] tracking-tight drop-shadow-lg text-center lg:text-left">G502 LIGHTSPEED</h1>
+            <h2 className="text-gray-300 text-lg sm:text-xl md:text-2xl font-semibold font-['Inter'] tracking-wide uppercase mt-1 text-center lg:text-left">Wireless Gaming Mouse</h2>
+        </div>
+    )
+}
+
+export function HeroDetails() {
+    return (
+        <div className="w-full flex flex-col items-center lg:items-start z-10 relative mt-6 lg:mt-0">
+            <p className="text-zinc-400 text-sm md:text-md font-normal font-['Inter'] leading-relaxed w-full sm:w-[90%] lg:mt-6 border-l-4 border-blue-500 pl-4 text-left">
                 Iconic G502 design meets pro-grade LIGHTSPEED wireless for ultra-fast, reliable connectivity. HERO 25K sensor features sub-micron tracking. POWERPLAY compatible for continuous charging both at rest and play.
             </p>
             <div className='flex gap-2 mt-6 items-center'>
@@ -29,4 +36,11 @@ function HeroText() {
     )
 }
 
-export default HeroText; 
+export default function HeroText() {
+    return (
+        <div className='text-white flex flex-col gap-2 justify-center items-center lg:items-start h-full z-10 relative'>
+            <HeroTitle />
+            <HeroDetails />
+        </div>
+    )
+} 
