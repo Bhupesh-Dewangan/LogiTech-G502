@@ -20,6 +20,7 @@ html {
     cursor: pointer;
     z-index: 100;
   }
+
   @media (max-width: 1024px) {
     .hamburger {
       display: flex;
@@ -27,6 +28,7 @@ html {
       gap: 5px;
     }
   }
+
   .hamburger .bar {
     width: 25px;
     height: 3px;
@@ -34,12 +36,15 @@ html {
     transition: all 0.3s ease;
     border-radius: 3px;
   }
+
   .hamburger.open .bar:nth-child(1) {
     transform: rotate(45deg) translate(5px, 6px);
   }
+
   .hamburger.open .bar:nth-child(2) {
     opacity: 0;
   }
+
   .hamburger.open .bar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -6px);
   }
