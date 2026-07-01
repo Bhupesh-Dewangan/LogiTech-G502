@@ -8,8 +8,10 @@ import { IoImageOutline } from "react-icons/io5";
 import { IoCubeOutline } from "react-icons/io5";
 import { useState } from 'react'
 import Preview from '../Components/Preview'
+import { motion } from 'framer-motion';
 
 function Product() {
+    const NoRepeat = true;
     const [showPreview, setShowPreview] = useState(false)
     const [initialTab, setInitialTab] = useState('3d')
 
@@ -23,15 +25,20 @@ function Product() {
             <h2 className="text-4xl pt-20 font-bold text-center mb-6">
                 Product Preview
             </h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10 mb-20 w-full max-w-7xl'>
+            <div
+                className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10 mb-20 w-full max-w-7xl'>
                 {/* Card 1: P2 with interactive 3D and gallery options */}
-                <div 
+                <motion.div
+                    initial={{ opacity: 0, y: 60 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: NoRepeat }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
                     className='h-full w-full bg-zinc-200 rounded-2xl cursor-pointer hover:bg-zinc-300 transition duration-300 ease-in-out'
                     onClick={() => openPreview('3d')}
                 >
                     <img src={P2} className='w-[85%] h-[85%] object-cover mx-auto' alt="Logitech G502 Preview" />
                     <div className='flex items-center justify-between mx-4 pb-10'>
-                        <div 
+                        <div
                             className='flex flex-col items-center justify-center cursor-pointer hover:text-[#00b0ff] transition-colors duration-200'
                             onClick={(e) => {
                                 e.stopPropagation();
@@ -41,7 +48,7 @@ function Product() {
                             <IoImageOutline className='text-lg' />
                             <p className='text-sm'>See all</p>
                         </div>
-                        <div 
+                        <div
                             className='flex flex-col items-center justify-center cursor-pointer hover:text-[#00b0ff] transition-colors duration-200'
                             onClick={(e) => {
                                 e.stopPropagation();
@@ -52,56 +59,78 @@ function Product() {
                             <p className='text-sm'>360 view</p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Card 2: P5 */}
-                <div 
+                <motion.div
+                    initial={{ opacity: 0, y: 60 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: NoRepeat }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
                     className='h-full w-full bg-zinc-200 rounded-2xl cursor-pointer hover:bg-zinc-300 transition duration-300 ease-in-out'
                     onClick={() => openPreview(1)}
                 >
                     <img src={P5} className='w-full h-full object-cover' alt="Logitech G502 Side View" />
-                </div>
+                </motion.div>
 
                 {/* Card 3: P3 */}
-                <div 
+                <motion.div
+                    initial={{ opacity: 0, y: 60 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: NoRepeat }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
                     className='h-full w-full bg-zinc-200 rounded-2xl cursor-pointer hover:bg-zinc-300 transition duration-300 ease-in-out'
                     onClick={() => openPreview(2)}
                 >
                     <img src={P3} className='w-full h-full object-cover' alt="Logitech G502 Angled View" />
-                </div>
+                </motion.div>
 
                 {/* Card 4: P4 */}
-                <div 
+                <motion.div
+                    initial={{ opacity: 0, y: 60 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: NoRepeat }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
                     className='h-full w-full bg-zinc-200 rounded-2xl cursor-pointer hover:bg-zinc-300 transition duration-300 ease-in-out'
                     onClick={() => openPreview(3)}
                 >
                     <img src={P4} className='w-full h-full object-cover' alt="Logitech G502 Bottom View" />
-                </div>
+                </motion.div>
 
                 {/* Card 5: P1 */}
-                <div 
+                <motion.div
+                    initial={{ opacity: 0, y: 60 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: NoRepeat }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
                     className='h-full w-full bg-zinc-200 rounded-2xl cursor-pointer hover:bg-zinc-300 transition duration-300 ease-in-out'
                     onClick={() => openPreview(4)}
                 >
                     <img src={P1} className='w-full h-full object-cover' alt="Logitech G502 Angled Front View" />
-                </div>
+                </motion.div>
 
                 {/* Card 6: P6 */}
-                <div 
+                <motion.div
+                    initial={{ opacity: 0, y: 60 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: NoRepeat }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
                     className='h-full w-full bg-zinc-200 rounded-2xl cursor-pointer hover:bg-zinc-300 transition duration-300 ease-in-out'
                     onClick={() => openPreview(5)}
                 >
                     <img src={P6} className='w-full h-full object-cover' alt="Logitech G502 Angled Side View" />
-                </div>
+                </motion.div>
             </div>
 
-            {showPreview && (
-                <Preview 
-                    initialTab={initialTab} 
-                    onClose={() => setShowPreview(false)} 
-                />
-            )}
-        </div>
+            {
+                showPreview && (
+                    <Preview
+                        initialTab={initialTab}
+                        onClose={() => setShowPreview(false)}
+                    />
+                )
+            }
+        </div >
     )
 }
 
