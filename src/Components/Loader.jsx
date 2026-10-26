@@ -14,7 +14,7 @@ const Loader = () => {
         /* Fade in + slide up */
         @keyframes fadeInUp {
           0% { opacity: 0; transform: translateY(10px); }
-          100% { opacity: 0.7; transform: translateY(0); }
+          100% { opacity: 0.7; transform: translateY(0); } 
         }
         
         /* Apply animations to specific classes */
