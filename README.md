@@ -42,6 +42,27 @@ The site uses smooth transitions and a responsive layout to present the product 
   - Built-in 3-stage LED DPI indicator lights provide instant visual sensitivity confirmation.
   - Dedicated thumb DPI Shift (Sniper Button) enables momentary low-DPI stability for pixel-perfect precision aiming in FPS titles.
 
+### ⚙️ Ergonomics, Customization & Ecosystem
+
+- **Tunable Weight & Balance System:**
+  - Includes **five 3.6 g weights** (up to 18 g total) for tailored weight customization.
+  - Repositionable across front, rear, left, right, and center balance points to calibrate center of gravity.
+  - Convenient magnetic weight cavity door on the underside for rapid, tool-free adjustments.
+
+- **Dual-Mode Hyper-Fast Scroll Wheel:**
+  - Weighted metal scroll wheel offering two operational modes.
+  - **Click-to-Click Ratchet Mode:** Tactile stepped scrolling for accurate weapon selections and inventory cycling.
+  - **Hyper-Fast Free-Spinning Mode:** Low-friction, continuous scrolling to power through lengthy documents and web pages.
+
+- **LIGHTSYNC Dynamic RGB:**
+  - Full-spectrum lighting supporting approximately **16.8 million colors**.
+  - Reactive effects driven by gameplay actions, audio visualizations, or on-screen colors.
+  - Ecosystem synchronization across Logitech G keyboards, headsets, and mouse pads via Logitech G HUB.
+
+- **Onboard Memory Profiles:**
+  - Store up to **5 ready-to-play hardware profiles** directly on the mouse (firmware 127.1.7).
+  - Travel-ready convenience: your personalized binds and DPI presets work on any PC without requiring background software or login.
+
 ## Tech Stack
 
 - React 19
