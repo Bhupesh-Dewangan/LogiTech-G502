@@ -63,6 +63,37 @@ The site uses smooth transitions and a responsive layout to present the product 
   - Store up to **5 ready-to-play hardware profiles** directly on the mouse (firmware 127.1.7).
   - Travel-ready convenience: your personalized binds and DPI presets work on any PC without requiring background software or login.
 
+### 🛡️ Build Quality & Durability
+
+- **Mechanical Switch Reliability:** Primary left and right buttons feature mechanical switches rated for up to **50-million clicks**.
+- **PTFE Low-Friction Feet:** High-grade PTFE feet engineered to sustain **> 250 km** of glide endurance.
+- **Ergonomic Side Grips:** Dual-injected rubberized side contours that provide secure handling during fast sweeps.
+- **Braided Cable:** 2.1-meter low-friction braided USB cable minimizing drag and tangles.
+- **32-Bit ARM Microprocessor:** High-speed onboard processing delivering a **1000 Hz (1ms) USB polling rate** and 16 bits/axis data precision.
+
+### 📋 Technical Specifications Matrix
+
+| Category | Specification | Value / Detail |
+| :--- | :--- | :--- |
+| **Physical Dimensions** | Height × Width × Depth | 131.2 mm × 75.0 mm × 40.0 mm |
+| **Weight** | Base Weight / Extra | 121 g (mouse only) / + up to 18 g (5 × 3.6 g weights) |
+| **Cable Length** | Connection & Cable | 2.1 m Braided Lightweight USB Cable |
+| **Sensor** | Sensor Architecture | HERO 25K Optical Sensor |
+| **Resolution** | DPI Sensitivity Range | 100 – 25,600 DPI (with 0 smoothing/filtering/acceleration) |
+| **Speed & Acceleration**| Max Speed / Acceleration | > 400 IPS / > 40 G |
+| **Responsiveness** | Report Rate & Microprocessor | 1000 Hz (1 ms) report rate, 32-bit ARM processor |
+| **Durability** | Buttons & Glide Travel | 50 million clicks (Left/Right), > 250 km PTFE feet |
+| **Onboard Memory** | Hardware Stored Profiles | Up to 5 profiles (requires firmware 127.1.7) |
+| **Lighting** | RGB Zones & Spectrum | LIGHTSYNC RGB (1 zone, 16.8 million colors) |
+| **OS Compatibility** | System Requirements | Windows 7+, macOS 10.11+, ChromeOS, USB port |
+
+### 🌐 Interactive Web Showcase Features
+
+- **Interactive 3D Product Viewer:** Real-time 3D model exploration with 360° orbital rotation, pan, and zoom powered by Three.js/React.
+- **Multi-Angle Gallery:** Modal gallery displaying high-resolution top, bottom, profile, and angled photography.
+- **Reactive Framer Motion Animations:** Smooth scroll-driven transitions, animated specification cards, and interactive side navigation bars.
+- **Custom Loading Screen:** Engaging introductory bootloader animation ensuring assets are primed before presentation.
+
 ## Tech Stack
 
 - React 19
