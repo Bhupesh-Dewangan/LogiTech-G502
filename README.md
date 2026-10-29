@@ -22,6 +22,26 @@ This project showcases a polished product experience with sections for:
 
 The site uses smooth transitions and a responsive layout to present the product in an engaging way.
 
+## 🚀 Product Features & Capabilities
+
+### 🎯 Core Performance & Tracking
+
+- **HERO 25K Optical Sensor:**
+  - Ground-up sub-micron optical architecture engineered for competition-level accuracy.
+  - Sensitivity range from **100 up to 25,600 DPI** with pinpoint tracking precision.
+  - Delivers **400+ IPS** (Inches Per Second) maximum tracking speed and **> 40G** acceleration.
+  - Zero smoothing, filtering, or acceleration across the full DPI spectrum for consistent 1:1 muscle-memory tracking.
+
+- **11 Fully Programmable Buttons:**
+  - Map essential game commands, macro sequences, melee attacks, building binds, or healing actions to 11 programmable controls.
+  - Customized through Logitech G HUB to put critical actions immediately at your fingertips.
+  - Includes integrated gesture button capabilities for enhanced workflow and tactical inputs.
+
+- **On-the-Fly DPI Switching & Sniper Shift:**
+  - Cycle up and down between up to 5 customizable DPI presets with a single click.
+  - Built-in 3-stage LED DPI indicator lights provide instant visual sensitivity confirmation.
+  - Dedicated thumb DPI Shift (Sniper Button) enables momentary low-DPI stability for pixel-perfect precision aiming in FPS titles.
+
 ## Tech Stack
 
 - React 19
